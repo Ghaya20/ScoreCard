@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center items-center h-screen">
+    <div class="relative group ">
+        <!-- <div class="flex flex-col"> -->
+                <!-- main card -->
+            <div class="relative bg-[#4831cc] flex flex-col justify-center items-center p-5 text-gray-200 w-[250px] space-y-2 h-auto rounded-3xl shadow-lg shadow-gray-400 z-10">
+                <h1 class="font-[Hanken Grotesk]">Your Result</h1>
+                <div class="ring-1 rounded-full w-40 h-40 py-8 text-center"
+                    style="background: linear-gradient(to bottom, rgba(12, 35, 125, 0.7) 0%, rgba(17, 41, 98, 0) 100%);">
+                    <p class="text-6xl text-center font-bold">76</p>
+                    <p class="font-light">of 100</p>
+                </div>
+                <p class="text-2xl font-medium font-[Hanken Grotesk]">Great</p>
+                <p class="text-center font-thin">You scored higher than 65% of the people who have taken these tests</p>
+            </div>
+
+            <!-- hover card 2 -->
+            <div class="absolute top-full -my-4 bg-white p-5 w-[250px] space-y-2 h-full rounded-3xl shadow-lg shadow-gray-300 font-[Hanken Grotesk] opacity-0 group-hover:opacity-100 transition-opacity duration-300 md:hidden">
+                <h1 class="font-medium text-start text-xl">Summary</h1>
+                <div class="flex justify-between bg-red-100 hover:bg-red-300 p-3">
+                    <div class="flex gap-2">
+                        <img src="https://ik.imagekit.io/gaia/score%20card/icon-reaction.svg?updatedAt=1720633198759" />
+                        <p>Reaction</p>
+                    </div>
+                    <p>80 <span class="font-extralight">/ 100</span></p>
+                </div>
+                <div class="flex justify-between bg-yellow-100 hover:bg-yellow-300 p-3">
+                    <div class="flex gap-2">
+                        <img src="https://ik.imagekit.io/gaia/score%20card/icon-memory.svg?updatedAt=1720633171154" />
+                        <p>Memory</p>
+                    </div>
+                    <p>92 <span class="font-extralight">/ 100</span></p>
+                </div>
+                <div class="flex justify-between bg-green-100 hover:bg-green-300 p-3">
+                    <div class="flex gap-2">
+                        <img src="https://ik.imagekit.io/gaia/score%20card/icon-verbal.svg?updatedAt=1720633198716" />
+                        <p>Verbal</p>
+                    </div>
+                    <p>61 <span class="font-extralight">/ 100</span></p>
+                </div>
+                <div class="flex justify-between bg-blue-100 hover:bg-blue-300 p-3">
+                    <div class="flex gap-2">
+                        <img src="https://ik.imagekit.io/gaia/score%20card/icon-visual.svg?updatedAt=1720633198791" />
+                        <p>Visual</p>
+                    </div>
+                    <p>72 <span class="font-extralight">/ 100</span></p>
+                </div>
+                <div class="flex justify-center my-5">
+                    <button class="bg-gray-900 rounded-full px-16 py-2 text-center text-gray-200">Continue</button>
+                </div>
+            </div>
+        <!-- </div> -->
+          
+         
+         <!-- hover card 1 -->
+        <div class="absolute top-0 left-full -ml-2 bg-white p-5 w-[250px] space-y-2 h-full rounded-3xl shadow-lg shadow-gray-300 font-[Hanken Grotesk] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 hidden md:block">
+            <h1 class="font-medium text-start text-xl">Summary</h1>
+            <div class="flex justify-between bg-red-100 hover:bg-red-300 p-3">
+                <div class="flex gap-2">
+                    <img src="https://ik.imagekit.io/gaia/score%20card/icon-reaction.svg?updatedAt=1720633198759" />
+                    <p>Reaction</p>
+                </div>
+                <p>80 <span class="font-extralight">/ 100</span></p>
+            </div>
+            <div class="flex justify-between bg-yellow-100 hover:bg-yellow-300 p-3">
+                <div class="flex gap-2">
+                    <img src="https://ik.imagekit.io/gaia/score%20card/icon-memory.svg?updatedAt=1720633171154" />
+                    <p>Memory</p>
+                </div>
+                <p>92 <span class="font-extralight">/ 100</span></p>
+            </div>
+            <div class="flex justify-between bg-green-100 hover:bg-green-300 p-3">
+                <div class="flex gap-2">
+                    <img src="https://ik.imagekit.io/gaia/score%20card/icon-verbal.svg?updatedAt=1720633198716" />
+                    <p>Verbal</p>
+                </div>
+                <p>61 <span class="font-extralight">/ 100</span></p>
+            </div>
+            <div class="flex justify-between bg-blue-100 hover:bg-blue-300 p-3">
+                <div class="flex gap-2">
+                    <img src="https://ik.imagekit.io/gaia/score%20card/icon-visual.svg?updatedAt=1720633198791" />
+                    <p>Visual</p>
+                </div>
+                <p>72 <span class="font-extralight">/ 100</span></p>
+            </div>
+            <div class="flex justify-center my-5">
+                <button class="bg-gray-900 rounded-full px-16 py-2 text-center text-gray-200">Continue</button>
+            </div>
+            
+            
+    </div>
+</body>
+
+</html>
